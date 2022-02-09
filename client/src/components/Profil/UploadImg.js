@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { uploadPicture } from "../../actions/user.actions";
+import { getUser, uploadPicture } from "../../actions/user.actions";
 
 const UploadImg = () => {
   const [file, setFile] = useState();
@@ -14,7 +14,9 @@ const UploadImg = () => {
     data.append("userId", userData.id);
     data.append("file", file);
 
-    dispatch(uploadPicture(data, userData.id));
+    dispatch(uploadPicture(data, userData.id)).then(() =>
+      dispatch(getUser(userData.id))
+    );
   };
 
   return (

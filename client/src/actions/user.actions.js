@@ -44,7 +44,7 @@ export const uploadPicture = (data, id) => {
         } else {
           dispatch({ type: GET_USER_ERRORS, payload: "" });
           return axios
-            .get(`${process.env.REACT_APP_API_URL}api/users/${id}`)
+            .get(`${process.env.REACT_APP_API_URL}/api/users/${id}`)
             .then((res) => {
               dispatch({ type: UPLOAD_PICTURE, payload: res.data.picture });
             });
