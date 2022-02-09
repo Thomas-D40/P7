@@ -1,0 +1,141 @@
+.messenger {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 60px 1fr 374px;
+    margin: 58px auto 50px;
+    position: relative;
+    
+
+    
+  
+  @media screen and(max-width: 1200px) {
+    grid-template-columns: 1fr;
+    margin: 58px 20px 50px
+  }
+
+  
+  
+    .main {
+      
+      margin-left : 60px;
+      width: 65%;
+      min-width: 650px;
+
+      @media screen and(max-width: 1200px) {
+        min-width: 80%;
+      }
+
+      @media screen and(max-width: 550px) {
+        margin-top: 70px;
+      }
+
+      textarea {
+        width: 100%;
+        font-size: 1.3rem;
+        border: 1px solid $color-2;
+        padding: 10px;
+        border-radius: 20px 20px 6px 20px;
+      }
+
+      .button-container {
+        .btn {
+          background: $color-2;
+          width: 240px;
+          transform: translateY(-3px);
+
+          &:hover {
+            background: $color-1;
+            width: 250px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .chatBoxWrapper {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        max-height: 80vh;
+      }
+      
+      .chatBoxTop {
+        height: 80%;
+        overflow-y: scroll;
+        padding-right: 15px;
+      }
+      
+      .chatBoxBottom {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+    }
+
+    
+    
+  
+    .right-side {
+      position: relative;
+      width: 30%;
+      min-width: 356px;
+      margin: 0px 0 0 14px;
+    
+      .right-side-container {
+        display: flex;
+        justify-content: center;
+        
+
+        .conversation {
+          
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          margin-top: 20px;
+          background: $color-2;
+          border-radius: 20px;
+          margin-bottom: 14px;
+          padding: 20px;
+          width: 356px;
+          
+          
+          &:hover {
+            background-color: $color-4;
+          }
+        }
+  
+        .conversation__active {
+          background-color: $color-4;
+        }
+        
+          
+        .conversationImg {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+          
+        .conversationName {
+          font-weight: 500;
+        }
+      }
+
+      @media screen and(max-width: 1200px) {
+        margin: 25px 10px;
+        padding-right: 15px;
+        width: auto;
+      }
+      
+
+      
+    }
+      
+      
+  } 
