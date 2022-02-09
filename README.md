@@ -16,7 +16,7 @@ MySQL
 
 ## Installation ##
 
-Une fois ce repo cloné, dans votre terminal, faites "cd back", "npm install" pour installer l'ORM Sequelize puis "npx sequelize" et "sequelize db:create" et "sequelize db:migrate" 
+Une fois ce repo cloné, dans votre terminal, faites "cd api", "npm install" pour installer l'ORM Sequelize puis "npx sequelize" et "sequelize db:create" et "sequelize db:migrate" 
 
 N'hésitez pas à vérifier que les options des Foreign Keys sont bien en "CASCADE", si cela s'avère nécessaire, je vous invite à le régler directement dans votre BDD.
 
@@ -24,7 +24,7 @@ N'hésitez pas à vérifier que les options des Foreign Keys sont bien en "CASCA
 
 ## Usage ##
 
-Dans un second terminal, faites "cd back" puis "npm start" pour démarrer le serveur gérant l'API.
+Dans un second terminal, faites "cd api" puis "npm start" pour démarrer le serveur gérant l'API.
 
 Le serveur devrait se lancer sur votre localhost:5000
 
