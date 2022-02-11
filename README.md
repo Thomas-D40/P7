@@ -5,7 +5,7 @@ Ceci est le Projet 7 pour la formation de Développeur Web avec OpenClassRooms.
 Ce projet consiste à créer un réseau social d'entreprise.
 Pour l'API, les technologies Node.js, express et Sequelize (ORM pour communiquer avec les BDD SQL) ont été utilisées.
 Pour le côté client, React.js est le framework principal pour structurer le projet. Sass a été utilisé pour gérer le style et Redux comme conteneur d'état.
-Afin de permettre un système de chat instantannée, un serveur gérant les websockets a été mis en place en utilisant la libraire Socket.io
+Afin de permettre un système de chat instantannée, un serveur gérant les websockets a été mis en place en utilisant la librairie Socket.io
 
 INSTRUCTIONS
 Il vous faudra avoir installé sur votre machine:
