@@ -13,9 +13,10 @@ const DeleteUser = () => {
   };
 
   const deleteUser = async () => {
+    console.log("On arrive ici");
     await axios({
       method: "delete",
-      url: `${process.env.REACT_APP_API_URL}api/users/${uid}`,
+      url: `${process.env.REACT_APP_API_URL}/api/users/${uid}`,
       withCredentials: true,
     })
       .then(() => removeCookie("jwt"))
